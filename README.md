@@ -1,7 +1,7 @@
 # gym
 GYM - GAMA for you and me
 
-gym stands for : GAMA for You and Me,
+gym stands for : GAMA for You and Me,   see [wiki](https://github.com/sriramab/gym/wiki)
 
 i.e., for non computer-scientists and non-programmers like You and Me who are social scientists or agent-based modelling enthusiasts with some basic skills in programming.
 
