@@ -4,6 +4,7 @@ author: "City Simulator Lab"
 date: "3/9/2018"
 output: bookdown::gitbook
 site: bookdown::bookdown_site
+output_dir: "docs"
 ---
 
 ```{r setup, include=FALSE}
