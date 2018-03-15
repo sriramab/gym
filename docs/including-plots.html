@@ -87,6 +87,7 @@ code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* Com
 code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 </style>
 
+<link rel="stylesheet" href="base.css" type="text/css" />
 </head>
 
 <body>
@@ -134,7 +135,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <link  rel="stylesheet" style type="text/css" href="base.css" />
 </head>
 <p>You can also embed plots, for example:</p>
-<blockquote id="bq_tip">
+<blockquote id="bq_error">
 something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care"> i cannot remember.</span>
 </blockquote>
 <p><img src="CSL_Gama_manual_files/figure-html/pressure-1.png" width="672" /></p>
@@ -188,6 +189,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

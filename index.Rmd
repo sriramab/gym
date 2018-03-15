@@ -19,14 +19,12 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # R Markdowns 
 
-<head>
-<link  rel="stylesheet" style type="text/css" href="base.css" />
-</head>
 
 
 
 
-<blockquote style=" border-left-width: 15px; border-left-color: #98ff98 ;"> 
+
+<blockquote id="bq_tip"> 
 something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care"> i cannot remember.</span>
 </blockquote>
 
@@ -53,7 +51,7 @@ summary(cars)
 </head>
 You can also embed plots, for example:
 
-<blockquote id="bq_tip"> 
+<blockquote id="bq_error"> 
 something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care" > i cannot remember.</span>
 </blockquote>
 

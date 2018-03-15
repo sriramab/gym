@@ -9,11 +9,16 @@
 
 #bq_warn{
   border-left: 10px solid #aaa;
-  border-left-color: maroon;
+  border-left-color: orange;
 }
 
 
 #bq_tip{
   border-left: 10px solid #aaa;
   border-left-color: #98ff98 ;
+}
+
+#bq_error{
+  border-left: 10px solid #aaa;
+  border-left-color: red ;
 }
