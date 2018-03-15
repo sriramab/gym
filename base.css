@@ -7,7 +7,13 @@
   color:red;
 }
 
-#bc_alert{
+#bq_warn{
   border-left: 10px solid #aaa;
   border-left-color: maroon;
+}
+
+
+#bq_tip{
+  border-left: 10px solid #aaa;
+  border-left-color: #98ff98 ;
 }

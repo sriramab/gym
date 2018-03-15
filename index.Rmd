@@ -2,7 +2,7 @@
 title: "Amsterdam"
 author: "City Simulator Lab"
 date: " `r Sys.Date()`"
-cover-image: "images/cover.png"
+
 site: bookdown::bookdown_site
 output: 
   bookdown::gitbook:
@@ -17,7 +17,7 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# R Markdowns {.foo}
+# R Markdowns 
 
 <head>
 <link  rel="stylesheet" style type="text/css" href="base.css" />
@@ -37,7 +37,7 @@ Some text for this block.
 </p>
 
 
-<blockquote id="bc_alert"> 
+<blockquote id="bq_warn"> 
 something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care" > i cannot remember.</span>
 </blockquote>
 
@@ -48,8 +48,14 @@ summary(cars)
 ```
 
 # Including Plots
-
+<head>
+<link  rel="stylesheet" style type="text/css" href="base.css" />
+</head>
 You can also embed plots, for example:
+
+<blockquote id="bq_tip"> 
+something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care" > i cannot remember.</span>
+</blockquote>
 
 ```{r pressure, echo=FALSE}
 plot(pressure)
