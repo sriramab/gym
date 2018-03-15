@@ -1,0 +1,13 @@
+#foo {
+  font-weight: bold;
+  color: red;
+}
+
+.care{
+  color:red;
+}
+
+#bc_alert{
+  border-left: 10px solid #aaa;
+  border-left-color: maroon;
+}

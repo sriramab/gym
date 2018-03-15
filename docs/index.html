@@ -12,7 +12,7 @@
   <meta property="og:title" content="Amsterdam" />
   <meta property="og:type" content="book" />
   
-  
+  <meta property="og:image" content="images/cover.png" />
   
   
 
@@ -20,11 +20,12 @@
   <meta name="twitter:title" content="Amsterdam" />
   
   
-  
+  <meta name="twitter:image" content="images/cover.png" />
 
 <meta name="author" content="City Simulator Lab">
 
 
+<meta name="date" content="2018-03-15">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -100,6 +101,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> R Markdowns</a></li>
 <li class="chapter" data-level="2" data-path="including-plots.html"><a href="including-plots.html"><i class="fa fa-check"></i><b>2</b> Including Plots</a></li>
+<li class="chapter" data-level="3" data-path="a-new-output-format2.html"><a href="a-new-output-format2.html"><i class="fa fa-check"></i><b>3</b> A New Output Format2</a><ul>
+<li class="chapter" data-level="3.1" data-path="a-new-output-format2.html"><a href="a-new-output-format2.html#new-styles"><i class="fa fa-check"></i><b>3.1</b> New Styles</a></li>
+<li class="chapter" data-level="3.2" data-path="a-new-output-format2.html"><a href="a-new-output-format2.html#your-familiar-tools"><i class="fa fa-check"></i><b>3.2</b> Your Familiar Tools</a></li>
+<li class="chapter" data-level="3.3" data-path="a-new-output-format2.html"><a href="a-new-output-format2.html#stay-tuned"><i class="fa fa-check"></i><b>3.3</b> Stay Tuned</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="a-new-output-formats3.html"><a href="a-new-output-formats3.html"><i class="fa fa-check"></i><b>4</b> A New Output Formats3</a><ul>
+<li class="chapter" data-level="4.1" data-path="a-new-output-formats3.html"><a href="a-new-output-formats3.html#new-styles4"><i class="fa fa-check"></i><b>4.1</b> New Styles4</a></li>
+<li class="chapter" data-level="4.2" data-path="a-new-output-formats3.html"><a href="a-new-output-formats3.html#your-familiar-tools5"><i class="fa fa-check"></i><b>4.2</b> Your Familiar Tools5</a></li>
+<li class="chapter" data-level="4.3" data-path="a-new-output-formats3.html"><a href="a-new-output-formats3.html#stay-tuned55"><i class="fa fa-check"></i><b>4.3</b> Stay Tuned55</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -120,11 +131,23 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="header">
 <h1 class="title">Amsterdam</h1>
 <h4 class="author"><em>City Simulator Lab</em></h4>
-<h4 class="date"><em>3/9/2018</em></h4>
+<h4 class="date"><em>2018-03-15</em></h4>
 </div>
-<div id="r-markdowns" class="section level1">
+<div id="r-markdowns" class="section level1 foo">
 <h1><span class="header-section-number">Chapter 1</span> R Markdowns</h1>
+<head>
+<link  rel="stylesheet" style type="text/css" href="base.css" />
+</head>
+<blockquote style=" border-left-width: 15px; border-left-color: #98ff98 ;">
+something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care"> i cannot remember.</span>
+</blockquote>
 <p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p id="foo">
+Some text for this block.
+</p>
+<blockquote id="bc_alert">
+something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care"> i cannot remember.</span>
+</blockquote>
 <p>When you click the <strong>Knit</strong> button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">summary</span>(cars)</code></pre></div>
 <pre><code>##      speed           dist       
@@ -174,7 +197,7 @@ gitbook.start({
 "link": null,
 "text": null
 },
-"download": null,
+"download": ["CSL_.pdf", "CSL_.epub", "CSL_.mobi"],
 "toc": {
 "collapse": "subsection"
 }
@@ -182,6 +205,19 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

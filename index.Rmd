@@ -1,19 +1,45 @@
 ---
 title: "Amsterdam"
 author: "City Simulator Lab"
-date: "3/9/2018"
-output: bookdown::gitbook
+date: " `r Sys.Date()`"
+cover-image: "images/cover.png"
 site: bookdown::bookdown_site
-
+output: 
+  bookdown::gitbook:
+    config:
+      download: ["pdf", "epub", "mobi"]
+  bookdown::html_book:
+    includes:
+      in_header: base.css
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# R Markdowns
+# R Markdowns {.foo}
+
+<head>
+<link  rel="stylesheet" style type="text/css" href="base.css" />
+</head>
+
+
+
+
+<blockquote style=" border-left-width: 15px; border-left-color: #98ff98 ;"> 
+something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care"> i cannot remember.</span>
+</blockquote>
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+<p id="foo">
+Some text for this block.
+</p>
+
+
+<blockquote id="bc_alert"> 
+something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is something blue this will be blockqoute, on doing what i do not knw, but i seem to know what is wrong. <span class="care" > i cannot remember.</span>
+</blockquote>
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
 

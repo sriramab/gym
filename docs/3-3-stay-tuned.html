@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Amsterdam" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="City Simulator Lab" />
+
+<meta name="date" content="2018-03-15" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+
+<meta name="description" content="Amsterdam">
+
+<title>Amsterdam</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+#foo {
+  font-weight: bold;
+  color: red;
+}
+
+.care{
+  color:red;
+}
+
+#bc_alert{
+  border-left: 10px solid #aaa;
+  border-left-color: maroon;
+}
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#r-markdowns"><span class="toc-section-number">1</span> R Markdowns</a></li>
+<li><a href="2-including-plots.html#including-plots"><span class="toc-section-number">2</span> Including Plots</a></li>
+<li class="has-sub"><a href="3-a-new-output-format2.html#a-new-output-format2"><span class="toc-section-number">3</span> A New Output Format2</a><ul>
+<li><a href="3-1-new-styles.html#new-styles"><span class="toc-section-number">3.1</span> New Styles</a></li>
+<li><a href="3-2-your-familiar-tools.html#your-familiar-tools"><span class="toc-section-number">3.2</span> Your Familiar Tools</a></li>
+<li><a href="3-3-stay-tuned.html#stay-tuned"><span class="toc-section-number">3.3</span> Stay Tuned</a></li>
+</ul></li>
+<li class="has-sub"><a href="4-a-new-output-formats3.html#a-new-output-formats3"><span class="toc-section-number">4</span> A New Output Formats3</a><ul>
+<li><a href="4-1-new-styles4.html#new-styles4"><span class="toc-section-number">4.1</span> New Styles4</a></li>
+<li><a href="4-2-your-familiar-tools5.html#your-familiar-tools5"><span class="toc-section-number">4.2</span> Your Familiar Tools5</a></li>
+<li><a href="4-3-stay-tuned55.html#stay-tuned55"><span class="toc-section-number">4.3</span> Stay Tuned55</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="stay-tuned" class="section level2">
+<h2><span class="header-section-number">3.3</span> Stay Tuned</h2>
+<p>Please visit the <a href="http://github.com/yixuan/prettydoc/">development page</a> of the <code>prettydoc</code> package for latest updates and news. Comments, bug reports and pull requests are always welcome.</p>
+
+</div>
+<!-- </div> -->
+<p style="text-align: center;">
+<a href="3-2-your-familiar-tools.html"><button class="btn btn-default">Previous</button></a>
+<a href="4-a-new-output-formats3.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>

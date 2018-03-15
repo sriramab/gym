@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Amsterdam" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="City Simulator Lab" />
+
+<meta name="date" content="2018-03-15" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+
+<meta name="description" content="Amsterdam">
+
+<title>Amsterdam</title>
+
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="libs/navigation-1.1/tabsets.js"></script>
+#foo {
+  font-weight: bold;
+  color: red;
+}
+
+.care{
+  color:red;
+}
+
+#bc_alert{
+  border-left: 10px solid #aaa;
+  border-left-color: maroon;
+}
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container-fluid main-container">
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#r-markdowns"><span class="toc-section-number">1</span> R Markdowns</a></li>
+<li><a href="2-including-plots.html#including-plots"><span class="toc-section-number">2</span> Including Plots</a></li>
+<li class="has-sub"><a href="3-a-new-output-format2.html#a-new-output-format2"><span class="toc-section-number">3</span> A New Output Format2</a><ul>
+<li><a href="3-1-new-styles.html#new-styles"><span class="toc-section-number">3.1</span> New Styles</a></li>
+<li><a href="3-2-your-familiar-tools.html#your-familiar-tools"><span class="toc-section-number">3.2</span> Your Familiar Tools</a></li>
+<li><a href="3-3-stay-tuned.html#stay-tuned"><span class="toc-section-number">3.3</span> Stay Tuned</a></li>
+</ul></li>
+<li class="has-sub"><a href="4-a-new-output-formats3.html#a-new-output-formats3"><span class="toc-section-number">4</span> A New Output Formats3</a><ul>
+<li><a href="4-1-new-styles4.html#new-styles4"><span class="toc-section-number">4.1</span> New Styles4</a></li>
+<li><a href="4-2-your-familiar-tools5.html#your-familiar-tools5"><span class="toc-section-number">4.2</span> Your Familiar Tools5</a></li>
+<li><a href="4-3-stay-tuned55.html#stay-tuned55"><span class="toc-section-number">4.3</span> Stay Tuned55</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="your-familiar-tools" class="section level2">
+<h2><span class="header-section-number">3.2</span> Your Familiar Tools</h2>
+<p>Feel free to use the <code>knitr</code> infrastructure with dozens of tunable options in your document.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">set.seed</span>(<span class="dv">123</span>)
+n &lt;-<span class="st"> </span><span class="dv">1000</span>
+x1  &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">rnorm</span>(n), <span class="dt">ncol =</span> <span class="dv">2</span>)
+x2  &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="kw">rnorm</span>(n, <span class="dt">mean =</span> <span class="dv">3</span>, <span class="dt">sd =</span> <span class="fl">1.5</span>), <span class="dt">ncol =</span> <span class="dv">2</span>)
+x   &lt;-<span class="st"> </span><span class="kw">rbind</span>(x1, x2)
+<span class="kw">head</span>(x)</code></pre></div>
+<pre><code>##             [,1]        [,2]
+## [1,] -0.56047565 -0.60189285
+## [2,] -0.23017749 -0.99369859
+## [3,]  1.55870831  1.02678506
+## [4,]  0.07050839  0.75106130
+## [5,]  0.12928774 -1.50916654
+## [6,]  1.71506499 -0.09514745</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">smoothScatter</span>(x, <span class="dt">xlab =</span> <span class="st">&quot;x1&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;x2&quot;</span>)</code></pre></div>
+<p><img src="CSL__files/figure-html/unnamed-chunk-1-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>You can include code snippets of languages other than R, but note that the block header has no curly brackets around the language name.</p>
+<div class="sourceCode"><pre class="sourceCode cpp"><code class="sourceCode cpp"><span class="co">// [[Rcpp::export]]</span>
+NumericVector timesTwo(NumericVector x) {
+    <span class="cf">return</span> x * <span class="dv">2</span>;
+}</code></pre></div>
+<p>You can also write math expressions, e.g. <span class="math inline">\(Y = X\beta + \epsilon\)</span>, footnotes<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>, and tables, e.g. using <code>knitr::kable()</code>.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="right">Sepal.Length</th>
+<th align="right">Sepal.Width</th>
+<th align="right">Petal.Length</th>
+<th align="right">Petal.Width</th>
+<th align="left">Species</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">5.1</td>
+<td align="right">3.5</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.9</td>
+<td align="right">3.0</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.7</td>
+<td align="right">3.2</td>
+<td align="right">1.3</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.6</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">5.0</td>
+<td align="right">3.6</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.4</td>
+<td align="right">3.9</td>
+<td align="right">1.7</td>
+<td align="right">0.4</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.6</td>
+<td align="right">3.4</td>
+<td align="right">1.4</td>
+<td align="right">0.3</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">5.0</td>
+<td align="right">3.4</td>
+<td align="right">1.5</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="odd">
+<td align="right">4.4</td>
+<td align="right">2.9</td>
+<td align="right">1.4</td>
+<td align="right">0.2</td>
+<td align="left">setosa</td>
+</tr>
+<tr class="even">
+<td align="right">4.9</td>
+<td align="right">3.1</td>
+<td align="right">1.5</td>
+<td align="right">0.1</td>
+<td align="left">setosa</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>A footnote here.<a href="3-2-your-familiar-tools.html#fnref1">↩</a></p></li>
+</ol>
+</div>
+<p style="text-align: center;">
+<a href="3-1-new-styles.html"><button class="btn btn-default">Previous</button></a>
+<a href="3-3-stay-tuned.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+$(document).ready(function () {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+});
+
+</script>
+
+</body>
+</html>
